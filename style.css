@@ -1,0 +1,56 @@
+body{
+    background-color:  rgb(1, 1, 34);
+}
+.navbar {
+    max-width: 1200px;
+    width: 100%;
+    max-height:100px ;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.389);
+    border-radius: 12px;
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 40px;
+    height: auto;
+    margin-top: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.navbar-item {
+    margin-top: 5px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar-icon {
+    width: 40px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.navbar-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    float: right;
+}
+.icon-nav{
+    margin-right: 10px;
+}
+.logo-nav{
+    margin-left: -10px
+}
