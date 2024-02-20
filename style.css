@@ -54,3 +54,55 @@ body{
 .logo-nav{
     margin-left: -10px
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .text-container {
+    font-family: monospace;
+    max-height: 50px;
+    max-width: 80%; /* ajustement pour la largeur maximale du texte */
+    overflow: auto; /* permettre le défilement si le contenu dépasse */
+
+  }
+  
+  .text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    color: white;
+    font-size: 2.5em;
+  }
+  
+  .typing-text {
+    border-right: .15em solid orange; /* Effet cursor */
+    animation: typing 3s steps(50, end) forwards;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  .erasing-text {
+    border-right: none;
+    animation: erasing 3s steps(55, end) forwards;
+  }
+  
+  @keyframes erasing {
+    from { width: 100% }
+    to { width: 0 }
+  }
+  @media screen and (max-width: 768px) {
+    .text-container {
+      max-width: 90%; /* ajustement pour la largeur maximale du texte sur les écrans plus petits */
+      display: block; /* Afficher en tant que bloc sur les petits écrans */
+      height: auto; /* Ajustement de la hauteur automatique */
+
+    }
+  }
