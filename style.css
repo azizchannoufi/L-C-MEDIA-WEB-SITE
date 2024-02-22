@@ -1,6 +1,7 @@
 body{
     background-color:  rgb(1, 1, 34);
-}
+    height: 2000px; /* Pour créer suffisamment d'espace pour faire défiler */
+  }
 .navbar {
     max-width: 1200px;
     width: 100%;
@@ -64,8 +65,9 @@ body{
   .text-container {
     font-family: monospace;
     max-height: 50px;
-    max-width: 80%; /* ajustement pour la largeur maximale du texte */
-    overflow: auto; /* permettre le défilement si le contenu dépasse */
+    max-width: 100%; /* ajustement pour la largeur maximale du texte */
+    /* overflow: auto;  */
+    word-wrap: break-word; /* Permet de casser les mots longs sur les nouvelles lignes */
 
   }
   
@@ -86,7 +88,7 @@ body{
   
   @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 90% }
   }
   
   .erasing-text {
@@ -98,7 +100,7 @@ body{
     from { width: 100% }
     to { width: 0 }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 568px) {
     .text-container {
       max-width: 90%; /* ajustement pour la largeur maximale du texte sur les écrans plus petits */
       display: block; /* Afficher en tant que bloc sur les petits écrans */
@@ -106,3 +108,10 @@ body{
 
     }
   }
+  
+  .box { 
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    color: white;
+}

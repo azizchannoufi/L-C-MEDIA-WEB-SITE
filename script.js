@@ -38,4 +38,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // Démarrer l'animation
     animateText();
   });
-  
+  const boxes = gsap.utils.toArray('.box');
+  boxes.forEach(box => {
+    gsap.to('.box', { // this will animate ALL boxes
+      x: 300,
+      scrollTrigger: {
+        trigger: '.box',  // this will use the first box as the trigger
+        scrub: true
+      }
+    })
+  });
